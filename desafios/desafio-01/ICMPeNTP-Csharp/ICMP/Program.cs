@@ -15,16 +15,19 @@ namespace ICMP
         private static byte[] receiveBuffer = new byte[256];
         private static EndPoint remoteEndPoint = new IPEndPoint(IPAddress.Any, 0);
 
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+       
         static void Main()
         {
             
-            //Server
+            //Este método chama o "Server" a partir deste ponto os listeners ficam na escuta de qualquer
+            //novidade enviada no protocolo ICMP e faz o output dele no terminal.
+            //Meu buffer envia as informações encodada em UFT8 e é decodificada assim na ponta do server.
+            //ainda é preciso melhorar esse decript.
             CreateIcmpSocket();
 
-            //Client
+            //O Cliente fica floodando com msg este protocolo e a cada msg enviada
+            //eu rodo em todos os ips que o usuário possuí localmente e faço o envio.
+            //o servidor deve responder para todos aqueles o qual o envio for sucessido.
             while (true) { 
                 
                 Thread.Sleep(10);
@@ -48,13 +51,7 @@ namespace ICMP
         {
             icmpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Raw, ProtocolType.Icmp);
             icmpSocket.Bind(new IPEndPoint(IPAddress.Any, 0));
-            // Uncomment to receive all ICMP message (including destination unreachable).
-            // Requires that the socket is bound to a particular interface. With mono,
-            // fails on any OS but Windows.
-            //if (Environment.OSVersion.Platform == PlatformID.Win32NT)
-            //{
-            //    icmpSocket.IOControl(0x4004667F, null, null);
-            //}
+         
             BeginReceiveFrom();
         }
 
