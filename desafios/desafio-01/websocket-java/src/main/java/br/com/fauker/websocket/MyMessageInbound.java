@@ -3,43 +3,36 @@ package br.com.fauker.websocket;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.apache.catalina.websocket.MessageInbound;
 import org.apache.catalina.websocket.WsOutbound;
 
 public class MyMessageInbound extends MessageInbound {
 
-	private WsOutbound myOutBound;
-	private static List<MyMessageInbound> mmiList = new ArrayList<MyMessageInbound>();
+	private String username;
+	
+	public MyMessageInbound(String username) {
+		this.username = username;
+	}
 
 	@Override
 	protected void onTextMessage(CharBuffer cb) throws IOException {
-		System.out.println("Mensagem aceita: " + cb);
-		for (MyMessageInbound m : mmiList) {
-			CharBuffer buffer = CharBuffer.wrap(cb);
-			m.myOutBound.writeTextMessage(buffer);
-			m.myOutBound.flush();
-		}
+		String message = String.format("\"%s\" : %s", this.username, cb.toString());
+		Server.broadcast(message);
 	}
 
 	@Override
 	protected void onOpen(WsOutbound outbound) {
-		try {
-			System.out.println("Um usuario se conectou no chat.");
-			this.myOutBound = outbound;
-			mmiList.add(this);
-			outbound.writeTextMessage(CharBuffer.wrap("Ola!!!"));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		Server.getConnections().add(this);
+		String message = String.format("\"%s\" se conectou.", this.username);
+		Server.broadcast(message);
 	}
 
 	@Override
 	protected void onClose(int status) {
-		System.out.println("Um usuario saiu do chat.");
-		mmiList.remove(this);
+		Server.getConnections().remove(this);
+		String message = String.format("\"%s\" saiu do chat.", this.username);
+		Server.broadcast(message);
 	}
 
 	@Override
