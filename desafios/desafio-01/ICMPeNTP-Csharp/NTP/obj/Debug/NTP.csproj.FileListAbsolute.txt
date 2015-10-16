@@ -1,0 +1,6 @@
+C:\app\Protocols\NTP\NTP\bin\Debug\NTP.exe.config
+C:\app\Protocols\NTP\NTP\bin\Debug\NTP.exe
+C:\app\Protocols\NTP\NTP\bin\Debug\NTP.pdb
+C:\app\Protocols\NTP\NTP\obj\Debug\NTP.csprojResolveAssemblyReference.cache
+C:\app\Protocols\NTP\NTP\obj\Debug\NTP.exe
+C:\app\Protocols\NTP\NTP\obj\Debug\NTP.pdb
