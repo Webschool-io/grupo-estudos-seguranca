@@ -1,4 +1,4 @@
-## Implementação do WebSocket em JAVA
+## Implementação do Protocolo WebSocket em JAVA
 # Passos para rodar
 
 ## Setup
