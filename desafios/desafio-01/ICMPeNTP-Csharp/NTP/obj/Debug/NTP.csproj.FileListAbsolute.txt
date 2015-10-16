@@ -1,0 +1,12 @@
+C:\app\Protocols\NTP\NTP\bin\Debug\NTP.exe.config
+C:\app\Protocols\NTP\NTP\bin\Debug\NTP.exe
+C:\app\Protocols\NTP\NTP\bin\Debug\NTP.pdb
+C:\app\Protocols\NTP\NTP\obj\Debug\NTP.csprojResolveAssemblyReference.cache
+C:\app\Protocols\NTP\NTP\obj\Debug\NTP.exe
+C:\app\Protocols\NTP\NTP\obj\Debug\NTP.pdb
+C:\app\Protocols\NTP\desafios\desafio-01\ICMPeNTP-Csharp\NTP\bin\Debug\NTP.exe.config
+C:\app\Protocols\NTP\desafios\desafio-01\ICMPeNTP-Csharp\NTP\obj\Debug\NTP.exe
+C:\app\Protocols\NTP\desafios\desafio-01\ICMPeNTP-Csharp\NTP\obj\Debug\NTP.pdb
+C:\app\Protocols\grupo-estudos-seguranca\desafios\desafio-01\ICMPeNTP-Csharp\NTP\bin\Debug\NTP.exe.config
+C:\app\Protocols\grupo-estudos-seguranca\desafios\desafio-01\ICMPeNTP-Csharp\NTP\obj\Debug\NTP.exe
+C:\app\Protocols\grupo-estudos-seguranca\desafios\desafio-01\ICMPeNTP-Csharp\NTP\obj\Debug\NTP.pdb
