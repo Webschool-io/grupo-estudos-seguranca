@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="chat">
+<head>
+<meta charset="UTF-8">
+<title>Desafio 01 - Grupo de Estudos Segurança [SUISSA]</title>
+	<link rel="stylesheet" type="text/css" href="resources/lib/bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/app.css">
+</head>
+<body ng-controller="chatController">
+	<div class="container">
+		<div class="jumbotron">
+			<h2>Desafio 01 do Grupo de Estudos do WebSchool</h2>
+		</div>
+		<form>	
+			<div style="margin-top: -20px">
+				<div class="col-sm-11">
+					<input class="form-control" ng-model="mensagem" type="text" placeholder="Envie uma mensagem!">
+				</div>
+				<div class="col-sm-1"> 
+					
+				<button type="submit" class="btn btn-success" ng-click="enviar()">Enviar</button>	
+				</div>				
+			</div>			
+		</form>
+		<table class="table table-striped" style="margin-top: 70px">
+			      <tr ng-repeat="log in logs">
+			        <td>{{log}}</td>
+			      </tr>
+		</table>		
+	</div>
+    <script src="resources/lib/angular/angular.js"></script>
+    <script src="resources/js/app.js"></script>
+    <script src="resources/js/controller/chatController.js"></script>	
+</body>
+</html>
