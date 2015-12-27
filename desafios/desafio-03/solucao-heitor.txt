@@ -1,0 +1,48 @@
+- Footprint
+
+Owner: Diego Araujo
+Registrant Organization: Komodo Tecnologia
+Registrant Street: Rua pedra azul, 4
+Registrant City: Ribeirao Das Neves
+Registrant State/Province: Minas Gerais
+Registrant Postal Code: 33858560
+Registrant Country: BR
+Registrant Phone: +55.31986664481
+Registrant Email: diihfilipe@gmail.com
+Admin Name: Diego Araujo
+Admin Organization: Komodo Tecnologia
+Admin Street: Rua pedra azul, 4
+Admin City: Ribeirao Das Neves
+Admin State/Province: Minas Gerais
+Admin Postal Code: 33858560
+Admin Country: BR
+Admin Phone: +55.31986664481
+Admin Email: diihfilipe@gmail.com
+
+R: Informações livres para qualquer um pode ocasionar vários riscos como brute-force/engenharia social no serviço de email.
+
+- Enumeração de serviços
+
+PORTAS          SERVIÇOS 
+ 22               ssh
+ 80               http
+ 9929           nping-echo
+ 31337            Elite
+
+R: Com a enumeração de serviços o invasor pode providenciar uma exploração nos serviços desatualizados.
+
+- Figerprint 
+
+Linux 3.X|2.6.X|2.4.X (95%), Asus Linux (92%), HP embedded (91%), Linksys Linux 2.4.X (90%), Google Android 4.X (88%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:asus:linux_kernel cpe:/h:hp:p2000_g3 cpe:/o:linux:linux_kernel:2.6.22 cpe:/o:linux:linux_kernel:2.6 cpe:/o:linksys:linux_kernel:2.4 cpe:/o:linux:linux_kernel:2.4 cpe:/o:google:android:4
+Aggressive OS guesses: Linux 3.11 - 3.14 (95%), Linux 3.11 (93%), Linux 3.12 (93%), Asus RT-AC66U WAP (92%), Linux 3.2 - 3.8 (92%), HP P2000 G3 NAS device (91%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (90%), Linux 2.6.18 - 2.6.22 (90%), Linux 3.2 (90%), Linux 3.5 (90%)
+No exact OS matches for host (test conditions non-ideal).
+
+R: Caso o invasor saiba o sistema operacional e sua versão ele pode pesquisar por falhas e explora-la.
+
+
+Parte 2: md5
+
+ba0e0cde1bf72c28d435c89a66afc61a = Sam
+aa293598348f661c2e4524692bc6ab15 = Frodo
+cff504e7f786cd01ecee2c47740b07d1 = Pippin
